@@ -11,7 +11,7 @@ class Logic(QMainWindow, Ui_MainWindow):
         from PyQt5.QtWidgets import QButtonGroup
         self.buttonGroup = QButtonGroup()
         self.buttonGroup.addButton(self.radio_button)
-        self.buttonGroup.addButton(self.radio_button_2)
+        self.buttonGroup.addButton(self.radio_button2)
 
         """Ai was used for the following two lines."""
         with open(self.file_name, "w", newline="") as file:
