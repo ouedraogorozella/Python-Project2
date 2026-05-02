@@ -74,7 +74,7 @@ class Logic(QMainWindow, Ui_MainWindow):
             self.buttonGroup.setExclusive(False)
             self.radio_button.setChecked(False)
             self.radio_button2.setChecked(False)
-            self.buttonGroup.setExclusive(False)
+            self.buttonGroup.setExclusive(True)
 
             self.show_results()
 
