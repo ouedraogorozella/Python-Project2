@@ -8,11 +8,6 @@ class Logic(QMainWindow, Ui_MainWindow):
         self.setupUi(self)
         self.file_name = "results.csv"
         
-        from PyQt5.QtWidgets import QButtonGroup
-        self.buttonGroup = QButtonGroup()
-        self.buttonGroup.addButton(self.radio_button)
-        self.buttonGroup.addButton(self.radio_button2)
-
         """Ai was used for the following two lines."""
         with open(self.file_name, "w", newline="") as file:
             pass
@@ -71,10 +66,8 @@ class Logic(QMainWindow, Ui_MainWindow):
             self.label_name6.setText(f"Vote submitted for {candidate}")
 
             self.input_name.clear()
-            self.buttonGroup.setExclusive(False)
             self.radio_button.setChecked(False)
             self.radio_button2.setChecked(False)
-            self.buttonGroup.setExclusive(True)
 
             self.show_results()
 
